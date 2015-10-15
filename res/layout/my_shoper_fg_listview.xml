@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+       />
+    <RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="2"
+  >
+    
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="wrap_content"
+       android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_launcher"
+       />
+    <TextView
+        android:id="@+id/tj"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/image"
+        android:layout_alignTop="@id/image"
+        android:text="添加"
+       />
+</RelativeLayout>
+</LinearLayout>

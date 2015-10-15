@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:weightSum="2" >
+   <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+         <ImageView
+            android:id="@+id/filmonresetback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:src="@drawable/back" />   
+    <TextView
+        android:id="@+id/filmonreset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="10dip"
+        android:text="重置密码"
+        android:textColor="#000000"
+        android:textSize="20dp" />
+
+    
+</RelativeLayout>
+          <View 
+              android:layout_height="1px"
+              android:layout_width="match_parent"
+              android:background="#cccccc"
+               android:layout_marginTop="8dip"
+              />
+ 
+           <EditText 
+        android:id="@+id/resetpwdPhonenumber"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_marginTop="10dp"
+        android:inputType="textWebEmailAddress"
+        android:height="40dip"
+        android:padding="10dip"
+        android:hint="手机号" 
+         android:background="?android:attr/listDivider" 
+        />
+     <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#cccccc" />
+
+    <RelativeLayout 
+         android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="50dp"
+        >          
+  <EditText 
+        android:id="@+id/resetpwd_checkcode"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dip"
+        android:hint="验证码"
+         android:background="?android:attr/listDivider" 
+        />
+      <Button 
+        android:id="@+id/resetpwdCheckcode"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_centerVertical="true"
+       android:layout_alignBottom="@+id/resetpwd_checkcode"
+       android:layout_alignRight="@+id/resetpwd_checkcode"
+       android:text="获取验证码"
+       android:textColor="#FFFFFF"
+       android:layout_marginRight="10dp"
+        android:background="#FF0015"
+          />
+        
+    </RelativeLayout>
+
+      <Button 
+          android:id="@+id/resetpwd_submit"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:background="#FF0015"
+          android:layout_marginTop="30dip"
+           android:layout_marginLeft="15dip"
+           android:layout_marginRight="15dip"
+           android:text="确定"
+          android:textColor="#FFFFFF"
+          android:textSize="22dip"
+      
+          />
+   
+</LinearLayout>

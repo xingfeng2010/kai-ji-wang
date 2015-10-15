@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/base_titlebar"
+        layout="@layout/base_titlebar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/px_to_dip_10"
+            android:layout_marginRight="@dimen/px_to_dip_10"
+            android:layout_marginTop="@dimen/px_to_dip_10"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/px_to_dip_120"
+                android:layout_marginRight="@dimen/px_to_dip_120"
+                android:layout_marginTop="@dimen/px_to_dip_10"
+                android:orientation="vertical" >
+
+                <EditText
+                    android:id="@+id/group_message_edittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/px_to_dip_40"
+                    android:background="@drawable/edit_bg"
+                    android:drawablePadding="@dimen/px_to_dip_20"
+                    android:hint="@string/msg_content"
+                    android:inputType="textCapWords"
+                    android:padding="@dimen/px_to_dip_10"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" >
+                </EditText>
+
+                <EditText
+                    android:id="@+id/group_custom_message_edittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/px_to_dip_40"
+                    android:background="@drawable/edit_bg"
+                    android:drawablePadding="@dimen/px_to_dip_20"
+                    android:hint="@string/custom_content"
+                    android:inputType="textCapWords"
+                    android:padding="@dimen/px_to_dip_10"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" >
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/px_to_dip_30"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/group_send_btn"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button"
+                    android:paddingLeft="@dimen/px_to_dip_50"
+                    android:paddingRight="@dimen/px_to_dip_50"
+                    android:text="@string/send"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/px_to_dip_34" >
+                </Button>
+
+                <Button
+                    android:id="@+id/group_chat_demo_btn"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/button"
+                    android:text="@string/group_chat_ui_demo"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/px_to_dip_34" >
+                </Button>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="@dimen/px_to_dip_120"
+                    android:layout_marginRight="@dimen/px_to_dip_120"
+                    android:layout_marginTop="@dimen/px_to_dip_10"
+                    android:orientation="vertical" >
+
+                    <EditText
+                        android:id="@+id/group_name_edittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/px_to_dip_40"
+                        android:background="@drawable/edit_bg"
+                        android:drawablePadding="@dimen/px_to_dip_20"
+                        android:hint="@string/group_name"
+                        android:inputType="textCapWords"
+                        android:padding="@dimen/px_to_dip_10"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" >
+                    </EditText>
+
+                    <EditText
+                        android:id="@+id/group_info_edittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/px_to_dip_40"
+                        android:background="@drawable/edit_bg"
+                        android:drawablePadding="@dimen/px_to_dip_20"
+                        android:hint="@string/group_info"
+                        android:inputType="textCapWords"
+                        android:padding="@dimen/px_to_dip_10"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" >
+                    </EditText>
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/group_submit_btn"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/button"
+                    android:text="@string/submit"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/px_to_dip_34" >
+                </Button>
+
+                <Button
+                    android:id="@+id/group_release_btn"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/button"
+                    android:text="@string/release_group"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/px_to_dip_34" >
+                </Button>
+
+                <Button
+                    android:id="@+id/group_exit_btn"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/button"
+                    android:text="@string/exit_Group"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/px_to_dip_34" >
+                </Button>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

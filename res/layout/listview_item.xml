@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+ <View
+            android:id="@+id/storesSplit01"
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:layout_marginTop="8dip"
+            android:background="@android:color/white" />
+
+        <TextView
+            android:id="@+id/storesTextView01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/storesSplit01"
+            android:layout_margin="10dp"
+            android:text="摄影机"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:id="@+id/storesImageView01"
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/storesSplit01"
+            android:layout_margin="10dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/shaixuan" />
+</RelativeLayout>

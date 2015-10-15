@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:weightSum="2" >
+    <RelativeLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+        android:background="#FFFFFF"  >
+      <ImageView
+        android:id="@+id/ccimageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:src="@drawable/back" />
+  <TextView
+        android:id="@+id/cctextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_alignBottom="@+id/ccimageView1"
+        android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+        android:layout_marginTop="5dp"
+        android:textSize="20sp"
+        android:text="企业用户" />
+      <Button
+        android:id="@+id/ccbuttonView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/cctextView1"
+        android:layout_marginRight="10dp"
+        android:gravity="right|center"
+         android:background="#FFFFFF" 
+         android:textColor="#FF0000"
+        android:text="确定"/>
+
+  </RelativeLayout>
+
+  <ScrollView
+         android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    >
+  <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+         >   
+       <View
+             android:id="@+id/mineCSplit01"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dip"
+        android:background="#cccccc" />
+
+  <EditText
+     android:id="@+id/mineCTextView01"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_below="@id/mineCSplit01"
+    android:layout_margin="10dp"
+     android:hint="公司名称" 
+      style="?android:attr/textViewStyle"
+     android:background="@null"
+     android:textColor="@null"
+     android:textSize="15dp"/>  
+     
+   <ImageView
+         android:id="@+id/mineCImageView01"
+         android:layout_width="wrap_content"
+         android:layout_height="15dp"
+        android:layout_alignParentRight="true"
+       android:layout_below="@id/mineCSplit01"
+         android:layout_margin="10dp"
+         android:layout_marginTop="20dp"
+         android:alpha="0"
+         android:src="@drawable/shaixuan" />
+          <View
+             android:id="@+id/mineCSplit02"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+           android:layout_below="@id/mineCImageView01"
+        android:layout_marginTop="5dip"
+        android:background="#cccccc" />
+                <RelativeLayout
+        android:id="@+id/mineCrelative01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mineCSplit02"
+        android:layout_marginTop="10dp"
+          android:background="#FFFFFF"
+        android:orientation="horizontal" >     
+     <TextView
+     android:id="@+id/mineCTextView02"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+     android:hint="公司类别" 
+     android:textSize="15dp"/>  
+     
+   <ImageView
+         android:id="@+id/mineCImageView02"
+         android:layout_width="wrap_content"
+         android:layout_height="15dp"
+        android:layout_alignParentRight="true"
+         android:layout_margin="5dp"
+         android:src="@drawable/shaixuan" />
+ </RelativeLayout>  
+          <View
+             android:id="@+id/mineCSplit03"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+           android:layout_below="@id/mineCSplit02"
+        android:layout_marginTop="35dip"
+        android:background="#cccccc" />
+              <EditText
+     android:id="@+id/mineCTextView03"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_below="@id/mineCSplit03"
+    android:layout_margin="10dp"
+     android:hint="公司全称" 
+     android:textSize="15dp"
+         style="?android:attr/textViewStyle"
+     android:background="@null"
+     android:textColor="@null"/>  
+     
+   <ImageView
+         android:id="@+id/mineCImageView03"
+         android:layout_width="wrap_content"
+         android:layout_height="15dp"
+        android:layout_alignParentRight="true"
+       android:layout_below="@id/mineCSplit03"
+         android:layout_margin="10dp"
+         android:layout_marginTop="20dp"
+         android:alpha="0"
+         android:src="@drawable/shaixuan" />
+          <View
+             android:id="@+id/mineCSplit04"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+           android:layout_below="@id/mineCImageView03"
+        android:layout_marginTop="5dip"
+        android:background="#cccccc" />
+                  <EditText
+     android:id="@+id/mineCTextView04"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_below="@id/mineCSplit04"
+    android:layout_margin="10dp"
+     android:hint="联系人姓名" 
+             style="?android:attr/textViewStyle"
+     android:background="@null"
+     android:textColor="@null"
+     android:textSize="15dp"/>  
+     
+   <ImageView
+         android:id="@+id/mineCImageView04"
+         android:layout_width="wrap_content"
+         android:layout_height="15dp"
+        android:layout_alignParentRight="true"
+       android:layout_below="@id/mineCSplit04"
+         android:layout_margin="10dp"
+         android:layout_marginTop="20dp"
+         android:alpha="0"
+         android:src="@drawable/shaixuan" />
+          <View
+             android:id="@+id/mineCSplit05"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+           android:layout_below="@id/mineCImageView04"
+        android:layout_marginTop="5dip"
+        android:background="#cccccc" />  
+                       <RelativeLayout
+        android:id="@+id/mineCrelative02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mineCSplit05"
+        android:layout_marginTop="10dp"
+          android:background="#FFFFFF"
+        android:orientation="horizontal" >     
+                    <TextView
+     android:id="@+id/mineCTextView05"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+     android:hint="营业执照" 
+       style="?android:attr/textViewStyle"
+     android:background="@null"
+     android:textColor="@null"
+     android:textSize="15dp"/>  
+     
+   <ImageView
+         android:id="@+id/mineCImageView05"
+         android:layout_width="wrap_content"
+         android:layout_height="15dp"
+        android:layout_alignParentRight="true"
+         android:layout_margin="5dp"
+         android:src="@drawable/shaixuan" />
+  </RelativeLayout> 
+          <View
+             android:id="@+id/mineCSplit06"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+           android:layout_below="@id/mineCSplit05"
+        android:layout_marginTop="35dip"
+        android:background="#cccccc" />  
+                          <EditText
+     android:id="@+id/mineCTextView06"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_below="@id/mineCSplit06"
+    android:layout_margin="10dp"
+     android:hint="营业执照注册号" 
+            style="?android:attr/textViewStyle"
+     android:background="@null"
+     android:textColor="@null"
+     android:textSize="15dp"/>  
+     
+   <ImageView
+         android:id="@+id/mineCImageView06"
+         android:layout_width="wrap_content"
+         android:layout_height="15dp"
+        android:layout_alignParentRight="true"
+       android:layout_below="@id/mineCSplit06"
+         android:layout_margin="10dp"
+         android:layout_marginTop="20dp"
+         android:alpha="0"
+         android:src="@drawable/shaixuan" />
+          <View
+             android:id="@+id/mineCSplit07"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+           android:layout_below="@id/mineCImageView06"
+        android:layout_marginTop="5dip"
+        android:background="#cccccc" />  
+                             <EditText
+     android:id="@+id/mineCTextView07"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_below="@id/mineCSplit07"
+    android:layout_margin="10dp"
+     android:hint="企业公函" 
+      style="?android:attr/textViewStyle"
+     android:background="@null"
+     android:textColor="@null"
+     android:textSize="15dp"/>  
+     
+   <ImageView
+         android:id="@+id/mineCImageView07"
+         android:layout_width="wrap_content"
+         android:layout_height="15dp"
+        android:layout_alignParentRight="true"
+       android:layout_below="@id/mineCSplit07"
+         android:layout_margin="10dp"
+         android:layout_marginTop="20dp"
+         android:alpha="0"
+         android:src="@drawable/shaixuan" />
+          <View
+             android:id="@+id/mineCSplit08"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+           android:layout_below="@id/mineCImageView07"
+        android:layout_marginTop="5dip"
+        android:background="#cccccc" />   
+               
+          </RelativeLayout>
+       </ScrollView>        
+</LinearLayout>
+

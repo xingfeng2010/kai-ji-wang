@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/cmessageimageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:src="@drawable/back" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="@+id/cmessageimageView2"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/ic_com_info_title" />
+
+    <com.wenyu.Utils.RoundedCornerImageView
+        android:id="@+id/cmessageimageView2"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/cmessageimageView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/filmonimg" />
+
+    <RelativeLayout
+        android:id="@+id/cmessagerelative1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cmessageimageView2"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/cmessagerelative01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cmessageSplit01"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/cmessageTextView01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="公司名字"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/cmessagetextView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/cmessageTextView01"
+                android:layout_centerHorizontal="true"
+                />
+
+            <ImageView
+                android:id="@+id/cmessageImageView01"
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_margin="10dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/shaixuan" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/cmessageSplit02"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/cmessageSplit01"
+            android:layout_marginTop="35dip"
+            android:background="#cccccc" />
+
+        <RelativeLayout
+            android:id="@+id/cmessagerelative02"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cmessageSplit02"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/cmessageTextView02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="公司类别"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/cmessagetextView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/cmessageTextView02"
+                android:layout_centerHorizontal="true"
+                android:text="" />
+
+            <ImageView
+                android:id="@+id/cmessageImageView02"
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_margin="10dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/shaixuan" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/cmessageSplit03"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/cmessageSplit02"
+            android:layout_marginTop="35dip"
+            android:background="#cccccc" />
+
+        <RelativeLayout
+            android:id="@+id/cmessagerelative03"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cmessageSplit03"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/cmessageTextView03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="公司地址"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="15dp" />
+
+             <TextView
+                android:id="@+id/cmessagetextView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/cmessageTextView03"
+                android:layout_centerHorizontal="true"
+                />
+
+            <ImageView
+                android:id="@+id/cmessageImageView03"
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_margin="10dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/shaixuan" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/cmessageSplit04"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/cmessageSplit03"
+            android:layout_marginTop="35dip"
+            android:background="#cccccc" />
+
+        <RelativeLayout
+            android:id="@+id/cmessagerelative04"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cmessageSplit04"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/cmessageTextView04"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="联系方式"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/cmessagetextView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/cmessageTextView04"
+                android:layout_centerHorizontal="true"
+                android:text="" />
+
+            <ImageView
+                android:id="@+id/cmessageImageView04"
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_margin="10dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/shaixuan" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/cmessageSplit05"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/cmessageSplit04"
+            android:layout_marginTop="35dip"
+            android:background="#cccccc" />
+
+        <RelativeLayout
+            android:id="@+id/cmessagerelative05"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cmessageSplit05"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/cmessageTextView05"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="公司简介"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/cmessagetextView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cmessageTextView05"
+                android:layout_alignLeft="@+id/cmessageTextView05"
+                android:layout_marginTop="-10dp"
+                android:text="简介" />
+
+            <ImageView
+                android:id="@+id/cmessageImageView05"
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_margin="10dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/shaixuan" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/cmessageSplit06"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/cmessagerelative05"
+            android:layout_marginTop="10dp"
+            android:background="#cccccc" />
+
+        <RelativeLayout
+            android:id="@+id/cmessagerelative06"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cmessageSplit06"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/cmessageTextView06"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="参与影片"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/cmessagetextView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cmessageTextView06"
+                android:layout_alignLeft="@+id/cmessageTextView06"
+                android:layout_marginTop="-10dp"
+                android:text="影片" />
+
+            <ImageView
+                android:id="@+id/cmessageImageView06"
+                android:layout_width="wrap_content"
+                android:layout_height="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_margin="10dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/shaixuan" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/cmessageSplit07"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/cmessagerelative06"
+            android:layout_marginTop="10dp"
+            android:background="#cccccc" />
+
+        <GridView
+            android:id="@+id/cmessagetextView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cmessageSplit07"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/cmessagetextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/cmessageimageView1"
+        android:layout_alignLeft="@+id/cmessageimageView2"
+        android:text="公司信息"
+        android:textSize="20dp" />
+
+</RelativeLayout>

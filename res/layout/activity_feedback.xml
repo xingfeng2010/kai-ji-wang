@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?><LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:weightSum="2" >
+
+    <RelativeLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"  >
+      <ImageView
+        android:id="@+id/feedbackimageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:src="@drawable/back" />
+  <TextView
+        android:id="@+id/feedbacktextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_alignBottom="@+id/feedbackimageView1"
+        android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+        android:layout_marginTop="5dp"
+        android:textSize="20sp"
+        android:text="设置" />
+    <TextView
+        android:id="@+id/feedbacktextView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_alignBottom="@+id/feedbackimageView1"
+         android:layout_alignParentRight="true"
+        android:layout_marginTop="5dp"
+         android:layout_marginRight="5dp"
+        android:textColor = "#0099FF"
+        android:textSize="15sp"
+        android:text="发送" />
+
+  </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dip"
+        android:background="#cccccc" />
+    <EditText
+               android:id="@+id/feedbackTextArea1"
+                android:layout_width="370dip"
+                android:layout_height="200dip"
+                 android:gravity="top"
+                  android:layout_margin="15dip" 
+                android:textSize="20dp"
+                 android:inputType="textMultiLine"
+                 android:background="@drawable/textview_border" 
+                  />
+
+
+
+       
+    </RelativeLayout>
+
+        
+
+</LinearLayout>

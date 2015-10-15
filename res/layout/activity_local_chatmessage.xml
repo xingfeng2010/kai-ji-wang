@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@+id/base_titlebar"
+            layout="@layout/base_titlebar" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/px_to_dip_10"
+            android:layout_marginRight="@dimen/px_to_dip_10"
+            android:layout_marginTop="@dimen/px_to_dip_10"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="customUserID:"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/darker_gray" />
+
+                <EditText
+                    android:id="@+id/local_customuserId_edittext"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_white"
+                    android:ems="10"
+                    android:gravity="top"
+                    android:hint="请输入用户customUserID"
+                    android:padding="8dip"
+                    android:scrollbars="vertical"
+                    android:textColor="#666666"
+                    android:textColorHint="@android:color/darker_gray"
+                    android:textSize="14sp" />
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="总消息记录数:"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/darker_gray" />
+
+                <EditText
+                    android:id="@+id/local_msgcount_edittext"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_white"
+                    android:ems="10"
+                    android:gravity="top"
+                    android:editable="false"
+                    android:padding="8dip"
+                    android:scrollbars="vertical"
+                    android:textColor="#666666"
+                    android:textColorHint="@android:color/darker_gray"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+        
+        <Button
+            android:id="@+id/local_query_msgcount_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:background="@drawable/button"
+            android:paddingLeft="@dimen/px_to_dip_100"
+            android:paddingRight="@dimen/px_to_dip_100"
+            android:text="查询某用户聊天记录数"
+            android:textColor="@color/white"
+            android:textSize="@dimen/px_to_dip_28" >
+        </Button>
+        
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/px_to_dip_10"
+            android:layout_marginRight="@dimen/px_to_dip_10"
+            android:layout_marginTop="@dimen/px_to_dip_20"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="customUserID:"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/darker_gray" />
+
+                <EditText
+                    android:id="@+id/local_customuserId2_edittext"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_white"
+                    android:ems="10"
+                    android:gravity="top"
+                    android:hint=""
+                    android:padding="8dip"
+                    android:scrollbars="vertical"
+                    android:textColor="#666666"
+                    android:textColorHint="@android:color/darker_gray"
+                    android:textSize="14sp" />
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_gravity="center"
+                    android:text="index:"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/darker_gray" />
+
+                <EditText
+                    android:id="@+id/local_index_edittext"
+                    android:layout_width="40dip"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_white"
+                    android:ems="10"
+                    android:gravity="top"
+                    android:hint=""
+                    android:text="0"
+                    android:padding="8dip"
+                    android:scrollbars="vertical"
+                    android:textColor="#666666"
+                    android:textColorHint="@android:color/darker_gray"
+                    android:textSize="14sp" />
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal" >
+
+                <EditText
+                    android:id="@+id/local_chatmsg_edittext"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_white"
+                    android:ems="10"
+                    android:gravity="top"
+                    android:editable="false"
+                    android:padding="8dip"
+                    android:lines="3"
+                    android:hint="用户聊天记录消息（请输入customuserId和index查询）"
+                    android:scrollbars="vertical"
+                    android:textColor="#666666"
+                    android:textColorHint="@android:color/darker_gray"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+        
+        <Button
+            android:id="@+id/local_query_chatmsg_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:background="@drawable/button"
+            android:paddingLeft="@dimen/px_to_dip_100"
+            android:paddingRight="@dimen/px_to_dip_100"
+            android:text="查询某用户聊天记录单条消息"
+            android:textColor="@color/white"
+            android:textSize="@dimen/px_to_dip_28" >
+        </Button>
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="customUserID:"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/local_customuserId3_edittext"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_white"
+                android:ems="10"
+                android:gravity="top"
+                android:hint="不输表示获取所有用户"
+                android:padding="8dip"
+                android:scrollbars="vertical"
+                android:textColor="#666666"
+                android:textColorHint="@android:color/darker_gray"
+                android:textSize="14sp" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/local_unreadall_edittext"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_white"
+                android:editable="false"
+                android:ems="10"
+                android:gravity="top"
+                android:hint="未读消息总数"
+                android:padding="8dip"
+                android:scrollbars="vertical"
+                android:textColor="#666666"
+                android:textColorHint="@android:color/darker_gray"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/local_query_unreadall_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@drawable/button"
+            android:paddingLeft="@dimen/px_to_dip_100"
+            android:paddingRight="@dimen/px_to_dip_100"
+            android:text="查询未读消息总数"
+            android:textColor="@color/white"
+            android:textSize="@dimen/px_to_dip_28" >
+        </Button>
+        
+        
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="customUserID:"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/local_customuserId4_edittext"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_white"
+                android:ems="10"
+                android:gravity="top"
+                android:hint="不输表示清零所有用户"
+                android:padding="8dip"
+                android:scrollbars="vertical"
+                android:textColor="#666666"
+                android:textColorHint="@android:color/darker_gray"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/local_query_clear_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:background="@drawable/button"
+            android:paddingLeft="@dimen/px_to_dip_100"
+            android:paddingRight="@dimen/px_to_dip_100"
+            android:text="未读消息数清零"
+            android:textColor="@color/white"
+            android:textSize="@dimen/px_to_dip_28" >
+        </Button>
+        
+        <View 
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:visibility="invisible"/>
+        
+    </LinearLayout>
+
+</ScrollView>

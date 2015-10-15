@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    
+    <RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"  
+       android:id="@+id/title_tope" 
+       android:background="#FFFFFF"
+        >
+      <ImageButton
+        android:id="@+id/searchbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="#FFFFFF"
+        android:padding="10dp"
+        android:src="@drawable/search" />   
+         <TextView
+        android:id="@+id/place"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/searchbtn"
+        android:gravity="center"
+        android:text="首页"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textSize="22sp" />
+        
+        
+    </RelativeLayout>
+   
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title_tope"
+        android:background="#F3F4F6" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F3F4F6"
+            android:orientation="vertical" >
+
+            <ListView
+                android:id="@+id/listView1"
+                android:layout_width="match_parent"
+                android:layout_height="473dp"
+                android:background="#F3F4F6"
+                android:paddingBottom="0dp"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                />
+
+               <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="#F3F4F6"
+        android:gravity="center_horizontal"
+        android:textSize="17sp" />
+            
+          <!--   <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="10dp"
+                android:background="@drawable/blank" /> -->
+        </LinearLayout>
+    </ScrollView>
+
+   
+
+</RelativeLayout>

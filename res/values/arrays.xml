@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="spinner3">
+        <item>类型</item>
+        <item>水下设备 </item>
+        <item>航拍机</item>
+        <item>摇臂</item>
+    </string-array>
+    <string-array name="spinner1">
+        <item>类型 </item>
+        <item>全部</item>
+        <item>公共场景</item>
+        <item>私人场景</item>
+        <item>特殊场景</item>
+    </string-array>
+    <string-array name="spinner2">
+        <item>拍摄场地 </item>
+        <item>影视人才</item>
+        <item>影视器材</item>
+        <item>店铺</item>
+        <item>商家</item>
+    </string-array>
+    <string-array name="spinner4">
+        <item>综合排序</item>
+        <item>浏览次数</item>
+        <item>收藏次数</item>
+    </string-array>
+    <string-array name="spinner5">
+        <item>区域</item>
+        <item>全部</item>
+    </string-array>
+
+</resources>

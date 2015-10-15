@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="window_bg">#ffeef1f3</color>
+    <color name="transparent">#00000000</color>
+    <color name="blank_color">#ff999999</color>
+    <color name="Grey">#BEBEBE</color>
+    <color name="LightGray">#D3D3D3</color>
+    <color name="transparent2">#FFD306</color>
+    <color name="silver">#00ffffff</color>
+    <color name="darkgray">#808080FF</color>
+    <color name="red">#FE2E2E</color>
+    <color name="ltgray">#4B8A08</color>
+    <color name="pressed">#fff22fff</color>
+    <color name="selected">#fff33fff</color>
+    <color name="focused">#ffff44ff</color>
+    <color name="dimgrey">#696969</color>
+    <color name="gray">#DBDBDB</color>
+    <color name="floralwhite">#FFFAF0</color>
+    <color name="grey">#808080</color>
+	  <color name="popup_main_background">#b0000000</color>
+    <color name="choose_eara_item_press_color">#f4f4f4</color>
+    <color name="choose_eara_item_press_colorred">#FF4040</color>
+    <color name="choose_eara_item_press_colorblack">#1E1E1E</color>
+    <color name="no_color">#00000000</color>
+     <color name="default_switch_button_unselect_bg">#FFFFFF</color>
+     <color name="default_switch_button_select_bg">#999999</color>
+    <color name="default_switch_button_border_color">#999999</color>
+    <color name="default_switch_button_select_color">#90ee90</color>
+    <color name="default_switch_button_unselect_color">#999999</color>
+</resources>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@+id/base_titlebar"
+            layout="@layout/base_titlebar" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/px_to_dip_10"
+            android:layout_marginRight="@dimen/px_to_dip_10"
+            android:layout_marginTop="@dimen/px_to_dip_10"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/old_password"
+                    android:textColor="@android:color/darker_gray" />
+
+                <EditText
+                    android:id="@+id/modify_oldpass_edittext"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_white"
+                    android:ems="10"
+                    android:gravity="top"
+                    android:hint="@string/hint_old_pass"
+                    android:padding="8dip"
+                    android:scrollbars="vertical"
+                    android:textColor="#666666"
+                    android:textColorHint="@android:color/darker_gray"
+                    android:textSize="18sp" />
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/new_password"
+                    android:textColor="@android:color/darker_gray" />
+
+                <EditText
+                    android:id="@+id/modify_newpass_edittext"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_white"
+                    android:ems="10"
+                    android:gravity="top"
+                    android:hint="@string/hint_new_pass"
+                    android:padding="8dip"
+                    android:scrollbars="vertical"
+                    android:textColor="#666666"
+                    android:textColorHint="@android:color/darker_gray"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </LinearLayout>
+        
+        <Button
+            android:id="@+id/modify_pass_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:background="@drawable/button"
+            android:paddingLeft="@dimen/px_to_dip_100"
+            android:paddingRight="@dimen/px_to_dip_100"
+            android:text="@string/submit_modifypass"
+            android:textColor="@color/white"
+            android:textSize="@dimen/px_to_dip_34" >
+        </Button>
+        
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+
+  xmlns:android="http://schemas.android.com/apk/res/android"
+
+  android:shape="oval">
+
+<!--     填充的颜色 -->
+
+    <solid android:color="#FFFFFF"/>
+
+   <!--   设置按钮的四个角为弧形
+
+     android:radius 弧形的半径
+ -->
+     <corners android:radius="5dip"/>
+
+    
+
+    <!--  padding: Button 里面的文字与Button边界的间隔 -->
+
+     <padding
+
+        android:left="10dp"
+
+        android:top="10dp"
+
+        android:right="10dp"
+
+        android:bottom="10dp"
+
+     />
+<!-- <corners 
+    android:topLeftRadius="5dp"
+    android:topRightRadius="5dp"
+    android:bottomLeftRadius="15dp"
+    android:bottomRightRadius="15dp"/>
+
+  这是半透明，还可以设置全透明，那就是白色边框的效果了
+  <solid android:color="#ff065e8d" />
+
+  <stroke
+    android:dashGap="0dp"
+    android:width="4dp"
+    android:color="@android:color/white" />
+ -->
+</shape>

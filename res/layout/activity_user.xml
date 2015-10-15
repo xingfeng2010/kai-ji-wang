@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/base_titlebar"
+        layout="@layout/base_titlebar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/px_to_dip_120"
+            android:layout_marginRight="@dimen/px_to_dip_120"
+            android:layout_marginTop="@dimen/px_to_dip_10"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/user_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px_to_dip_40"
+                android:background="@drawable/edit_bg"
+                android:drawablePadding="@dimen/px_to_dip_20"
+                android:hint="@string/msg_content"
+                android:inputType="textCapWords"
+                android:padding="@dimen/px_to_dip_10"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="20sp" >
+            </EditText>
+
+            <!-- 1. 发送 -->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/px_to_dip_30"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/user_send_btn"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/button"
+                    android:paddingLeft="@dimen/px_to_dip_50"
+                    android:paddingRight="@dimen/px_to_dip_50"
+                    android:text="@string/send"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/px_to_dip_34" >
+                </Button>
+            </LinearLayout>
+
+            <!-- 2. 用户信息 -->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/user_userinfo_btn"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/button"
+                    android:paddingLeft="@dimen/px_to_dip_50"
+                    android:paddingRight="@dimen/px_to_dip_50"
+                    android:text="@string/userinfo"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/px_to_dip_34" >
+                </Button>
+            </LinearLayout>
+
+            <!-- 3. 用户关系操作 -->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/user_relation_btn"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/button"
+                    android:paddingLeft="@dimen/px_to_dip_50"
+                    android:paddingRight="@dimen/px_to_dip_50"
+                    android:text="@string/user_relation_operations"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/px_to_dip_34" >
+                </Button>
+            </LinearLayout>
+
+            <!-- 4. 聊天界面DEMO -->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/user_chat_ui_demo_btn"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/button"
+                    android:paddingLeft="@dimen/px_to_dip_50"
+                    android:paddingRight="@dimen/px_to_dip_50"
+                    android:text="@string/cmd_ChatUIDemo"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/px_to_dip_34" >
+                </Button>
+            </LinearLayout>
+
+            <!-- 5. 缩略头像 -->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/user_thumbnail_btn"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/button"
+                    android:paddingLeft="@dimen/px_to_dip_50"
+                    android:paddingRight="@dimen/px_to_dip_50"
+                    android:text="@string/thumbnail_head"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/px_to_dip_34" >
+                </Button>
+            </LinearLayout>
+
+            <!-- 6. 头像原图 -->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/user_photo_btn"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/button"
+                    android:paddingLeft="@dimen/px_to_dip_50"
+                    android:paddingRight="@dimen/px_to_dip_50"
+                    android:text="@string/cmd_origin_head"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/px_to_dip_34" >
+                </Button>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+   
+   <RelativeLayout
+       xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/myinfor2relative1"
+        android:layout_marginTop="10dp"
+        android:background="#FFFFFF"
+        android:orientation="horizontal" >
+
+
+
+        <TextView
+            android:id="@+id/perphoto2TextView01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="25dp"
+            android:layout_centerHorizontal="true"
+            android:text="拍照"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+
+
+        <View
+            android:id="@+id/perphoto2Split02"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/perphoto2TextView01"
+            android:layout_marginTop="5dip"
+            android:background="#cccccc" />
+
+        <TextView
+            android:id="@+id/perphoto2TextView02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/perphoto2Split02"
+            android:layout_margin="10dp"
+             android:layout_centerHorizontal="true"
+            android:text="从手机相册选择"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+
+
+
+
+        <View
+            android:id="@+id/perphoto2Split03"
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:layout_below="@id/perphoto2TextView02"
+            android:layout_marginTop="5dip"
+            android:background="#cccccc" />
+
+        <TextView
+            android:id="@+id/perphoto2TextView03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/perphoto2Split03"
+            android:layout_margin="10dp"
+              android:layout_centerHorizontal="true"
+            android:text="取消"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+        <View
+            android:id="@+id/perphoto2Split04"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/perphoto2TextView03"
+            android:layout_marginTop="5dip"
+            android:background="#cccccc" />
+
+
+
+ 
+
+
+   
+
+ 
+
+
+
+
+    </RelativeLayout> 
+
+

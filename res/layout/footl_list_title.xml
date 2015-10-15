@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:id="@+id/tope_lay"
+    android:gravity="center_vertical"
+    android:layout_marginTop="6dp"
+    android:layout_marginBottom="6dp"
+    android:layout_height="wrap_content" >
+    <ImageView
+        android:id="@+id/image"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+         android:src="@drawable/back"/>
+
+    <RadioGroup
+        android:id="@+id/title_g"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/liu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/left"
+            android:button="@null"
+            android:gravity="center"
+            android:text="影棚"
+            android:textColor="@android:color/holo_red_light"
+            />
+
+        <RadioButton
+            android:id="@+id/shoucang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/right"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="实景"
+            android:textColor="@android:color/white" />
+    </RadioGroup>
+    </RelativeLayout>
+    
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tope_lay" >
+    </FrameLayout>
+
+</RelativeLayout>

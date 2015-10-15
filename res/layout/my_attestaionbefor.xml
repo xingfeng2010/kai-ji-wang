@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/mycountimageView1"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_margin="10dp"
+        android:src="@drawable/back"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/mycounttextView1"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="我的"
+        android:textSize="22sp" />
+
+    <View
+        android:layout_below="@+id/mycounttextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="#cccccc" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="@+id/mycountimageView1"
+        android:layout_marginTop="50dp"
+        android:background="@color/emoji_btn_normal"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/ll_img"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mycountimageView1"
+        android:layout_marginTop="50dp"
+        android:gravity="center" >
+
+        <com.wenyu.Utils.RoundedCornerImageView
+            android:id="@+id/mycountimageView2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="15dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/filmonimg" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mycountrelative1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll_img"
+        android:background="#FFFFFF"
+        android:orientation="vertical" >
+
+        <View
+            android:id="@+id/mycountSplit05"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/mycountrelative1"
+            android:background="#cccccc" />
+
+        <RelativeLayout
+            android:id="@+id/myattestation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/mycountimageView6"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="10dp"
+                android:src="@drawable/attestation" />
+
+            <TextView
+                android:id="@+id/mycounttextView2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/mycountimageView6"
+                android:padding="15dp"
+                android:text="个人信息" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/mycounttextView2"
+                android:background="#cccccc" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/renzheng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/mycounttextView3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/mycountimageView6"
+                android:padding="15dp"
+                android:text="我要认证" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/mycounttextView3"
+                android:background="#cccccc" />
+
+            <ImageView
+                android:id="@+id/mycountimageView6"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="10dp"
+                android:src="@drawable/ke3" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/kefu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/mycounttextView4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/mycountimageView6"
+                android:padding="15dp"
+                android:text="联系客服" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/mycounttextView4"
+                android:background="#cccccc" />
+
+            <ImageView
+                android:id="@+id/mycountimageView6"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="10dp"
+                android:src="@drawable/ke2" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/mycounttextView5"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/mycountimageView6"
+                android:padding="15dp"
+                android:text="设置" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/mycounttextView5"
+                android:background="#cccccc" />
+
+            <ImageView
+                android:id="@+id/mycountimageView6"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="10dp"
+                android:src="@drawable/setting" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/mycountbutton1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:background="@android:color/holo_red_dark"
+            android:text="退出当前账号"
+            android:textColor="#FFFFFF"
+             />
+    </LinearLayout>
+
+</RelativeLayout>

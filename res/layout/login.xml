@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:weightSum="2" >
+   <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+         <ImageView
+            android:id="@+id/filmonquit"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/quit"
+            android:visibility="gone" />   
+    <TextView
+        android:id="@+id/filmonlogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="10dip"
+        android:text="@string/login"
+        android:textColor="#000000"
+        android:textSize="24dp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dip"
+        android:background="#cccccc" />
+
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:background="@drawable/filmonimg"
+            />
+
+    <EditText
+        android:id="@+id/login_phonenumber"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:layout_marginTop="35dip"
+        android:background="?android:attr/listDivider"
+        android:height="40dip"
+        android:hint="@string/phone"
+        android:paddingLeft="25dip" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:background="#cccccc" />
+
+    <EditText
+        android:id="@+id/login_password"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:background="?android:attr/listDivider"
+        android:height="40dip"
+        android:hint="密码"
+        android:paddingLeft="25dip"
+        android:password="true" />
+
+    <Button
+        android:id="@+id/login_submit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:layout_marginTop="30dip"
+        android:background="#FF4F4F"
+        android:text="@string/login"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp" />
+
+    <!-- 登录部分结束 -->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dip"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/login_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:text="立即注册"
+            android:textColor="#666633" />
+        
+         <View
+        android:layout_width="1px"
+        android:layout_height="match_parent"
+        android:background="#cccccc" />
+
+         <Button
+            android:id="@+id/login_forget"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:text="忘记密码"
+            android:textColor="#666633" />
+        
+    </LinearLayout>
+</LinearLayout>

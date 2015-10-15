@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <include
+                android:id="@+id/base_titlebar"
+                layout="@layout/base_titlebar" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/px_to_dip_10"
+                android:layout_marginRight="@dimen/px_to_dip_10"
+                android:layout_marginTop="@dimen/px_to_dip_10"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical" >
+
+                    <EditText
+                        android:id="@+id/thumbnail_image_height_edittext"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/bg_white"
+                        android:gravity="top"
+                        android:hint="@string/image_height"
+                        android:inputType="number"
+                        android:padding="8dip"
+                        android:textColor="#666666"
+                        android:textSize="18sp" >
+
+                        <requestFocus />
+                    </EditText>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical" >
+
+                    <EditText
+                        android:id="@+id/thumbnail_image_width_edittext"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/bg_white"
+                        android:gravity="top"
+                        android:hint="@string/image_width"
+                        android:inputType="number"
+                        android:padding="8dip"
+                        android:textColor="#666666"
+                        android:textSize="18sp" >
+                    </EditText>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/px_to_dip_10"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical" >
+
+                    <Button
+                        android:id="@+id/thumbnail_request_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/button"
+                        android:paddingLeft="@dimen/px_to_dip_150"
+                        android:paddingRight="@dimen/px_to_dip_150"
+                        android:text="@string/request"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/px_to_dip_34" >
+                    </Button>
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/thumbnail_imageview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:scaleType="fitCenter" />
+
+            <TextView
+                android:id="@+id/thumbnail_tip_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:textSize="19sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

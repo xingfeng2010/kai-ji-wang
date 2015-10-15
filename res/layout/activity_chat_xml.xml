@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <imsdk.views.IMChatView
+        xmlns:IMSDK="http://schemas.android.com/apk/res"
+        android:id="@+id/chat_xml_chatview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        IMSDK:main_photo_corner_radius="5dip"
+        IMSDK:main_photo_visible="true"
+        IMSDK:max_gif_count_in_message="10"
+        IMSDK:title_bar_visible="true" />
+
+</FrameLayout>

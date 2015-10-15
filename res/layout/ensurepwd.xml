@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:weightSum="2" >
+   <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+         <ImageView
+            android:id="@+id/filmonresetback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:src="@drawable/back" />   
+    <TextView
+        android:id="@+id/filmonreset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="10dip"
+        android:text="重置密码"
+        android:textColor="#000000"
+        android:textSize="20dp" />
+
+    
+</RelativeLayout>
+          <View 
+              android:layout_height="1px"
+              android:layout_width="match_parent"
+              android:background="#cccccc"
+               android:layout_marginTop="8dip"
+              />
+ 
+           <EditText 
+        android:id="@+id/ensurepwdPhonenumber"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_marginTop="10dp"
+        android:inputType="textWebEmailAddress"
+        android:height="40dip"
+        android:padding="10dip"
+        android:hint="新的密码" 
+         android:password="true" 
+         android:background="?android:attr/listDivider" 
+        />
+    
+
+
+  <EditText 
+        android:id="@+id/ensurepwd_check"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+           android:padding="10dip"
+        android:height="40dip"
+        android:hint="再次输入"
+         android:password="true" 
+         android:background="?android:attr/listDivider" 
+        />
+
+   
+
+
+      <Button 
+          android:id="@+id/ensurepwd_submit"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:background="#FF0015"
+          android:layout_marginTop="30dip"
+           android:layout_marginLeft="15dip"
+           android:layout_marginRight="15dip"
+           android:text="确定"
+          android:textColor="#FFFFFF"
+          android:textSize="22dip"
+      
+          />
+   
+</LinearLayout>

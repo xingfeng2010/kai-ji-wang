@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:weightSum="2" 
+      android:background="#FFFFFF">
+   <RelativeLayout 
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+       android:orientation="horizontal"
+         android:background="#FFFFFF">
+    <ImageView
+        android:id="@+id/equiplistImageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_margin="10dp"
+        android:src="@drawable/back" />
+    <TextView
+     android:id="@+id/equiplistTextView1"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_alignTop="@+id/equiplistImageView1"
+     android:layout_centerHorizontal="true"
+      android:textSize="20sp"
+     android:text="产品列表" />
+
+   
+    </RelativeLayout>
+      
+      <LinearLayout
+        android:id="@+id/proll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        android:weightSum="3">
+
+        <Spinner
+            android:id="@+id/proBrand"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+  
+            android:gravity="top" />
+
+        <Spinner
+            android:id="@+id/proYear"
+          android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            />
+
+        <Spinner
+            android:id="@+id/proTy"
+          android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/productListview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+   />
+  
+    
+</LinearLayout>
+
+    

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/base_titlebar"
+        layout="@layout/base_titlebar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/px_to_dip_120"
+            android:layout_marginRight="@dimen/px_to_dip_120"
+            android:layout_marginTop="@dimen/px_to_dip_10"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/relation_request_content_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/px_to_dip_40"
+                android:background="@drawable/edit_bg"
+                android:drawablePadding="@dimen/px_to_dip_20"
+                android:hint="@string/friend_request_message"
+                android:inputType="textCapWords"
+                android:padding="@dimen/px_to_dip_10"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="20sp" >
+            </EditText>
+
+            <!-- 1. 发送好友请求 -->
+
+            <Button
+                android:id="@+id/relation_send_friend_request"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/button"
+                android:paddingLeft="@dimen/px_to_dip_50"
+                android:paddingRight="@dimen/px_to_dip_50"
+                android:text="@string/addFriend"
+                android:textColor="@color/white"
+                android:textSize="@dimen/px_to_dip_34" >
+            </Button>
+
+            <!-- 2. 移除好友 -->
+
+            <Button
+                android:id="@+id/relation_remove_from_friend_list"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="65dp"
+                android:background="@drawable/button"
+                android:paddingLeft="@dimen/px_to_dip_50"
+                android:paddingRight="@dimen/px_to_dip_50"
+                android:text="@string/removeFriend"
+                android:textColor="@color/white"
+                android:textSize="@dimen/px_to_dip_34" >
+            </Button>
+
+            <!-- 3. 加入黑名单 -->
+
+            <Button
+                android:id="@+id/relation_kick_to_blacklist"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/button"
+                android:paddingLeft="@dimen/px_to_dip_50"
+                android:paddingRight="@dimen/px_to_dip_50"
+                android:text="@string/addBlack"
+                android:textColor="@color/white"
+                android:textSize="@dimen/px_to_dip_34" >
+            </Button>
+
+            <!-- 4. 从黑名单移除 -->
+
+            <Button
+                android:id="@+id/relation_remove_from_blacklist"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="65dp"
+                android:background="@drawable/button"
+                android:paddingLeft="@dimen/px_to_dip_50"
+                android:paddingRight="@dimen/px_to_dip_50"
+                android:text="@string/removeBlack"
+                android:textColor="@color/white"
+                android:textSize="@dimen/px_to_dip_34" >
+            </Button>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

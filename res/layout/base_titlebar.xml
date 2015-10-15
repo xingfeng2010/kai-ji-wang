@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/px_to_dip_100"
+    android:background="@drawable/im_title_bg2" >
+
+    <TextView
+        android:id="@+id/mid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:paddingLeft="@dimen/px_to_dip_20"
+        android:paddingRight="@dimen/px_to_dip_20"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <!--
+         <TextView
+        android:id="@+id/left"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@id/mid"
+        android:ellipsize="end"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="10dp"
+        android:singleLine="true"
+        android:text="@string/back"
+        android:textColor="#009946"
+        android:textSize="18sp" />
+    -->
+
+    <ImageButton
+        android:id="@+id/left"
+        android:layout_width="60dip"
+        android:layout_height="45dip"
+        android:layout_centerVertical="true"
+        android:background="@android:color/transparent"
+        android:contentDescription="@null"
+        android:src="@drawable/im_back_select_btn" />
+
+    <ImageView
+        android:id="@+id/left_dividingline"
+        android:layout_width="wrap_content"
+        android:layout_height="25dip"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/left"
+        android:contentDescription="@null"
+        android:src="@drawable/im_dividingline" />
+
+    <TextView
+        android:id="@+id/right"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/mid"
+        android:ellipsize="end"
+        android:gravity="right|center_vertical"
+        android:paddingRight="10dp"
+        android:singleLine="true"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+</RelativeLayout>
