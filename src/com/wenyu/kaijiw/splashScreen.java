@@ -32,11 +32,11 @@ public class splashScreen extends Activity {
 	            public void run() {
 	                /* Create an Intent that will start the Main WordPress Activity. */
 	            	Intent mainIntent = new Intent();
-	            	if (BaoyzApplication.getInstance().isLogined) {
+//	            	if (BaoyzApplication.getInstance().isLogined) {
 	            		mainIntent.setClass(splashScreen.this, MainActivity.class);
-	            	} else {
-	            		mainIntent.setClass(splashScreen.this, LoginActivity.class);
-	            	}
+//	            	} else {
+//	            		mainIntent.setClass(splashScreen.this, LoginActivity.class);
+//	            	}
 	                
 	                splashScreen.this.startActivity(mainIntent);
 	                splashScreen.this.finish();
