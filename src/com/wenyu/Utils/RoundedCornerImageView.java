@@ -5,6 +5,7 @@ import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
+import android.graphics.Paint.Style;
 import android.graphics.PorterDuff.Mode;
 import android.graphics.PorterDuffXfermode;
 import android.graphics.RectF;
@@ -66,13 +67,17 @@ public class RoundedCornerImageView extends ImageView {
 
 		composedCanvas.drawARGB(0, 0, 0, 0);
 
-		composedCanvas.drawRoundRect(new RectF(0, 0, width, height),
+		composedCanvas.drawRoundRect(new RectF(5, 5, width-5, height-5),
 				this.roundness, this.roundness, paint);
-
 		paint.setXfermode(new PorterDuffXfermode(Mode.SRC_IN));
-
 		composedCanvas.drawBitmap(originalBitmap, 0, 0, paint);
-
+		Paint temppaint = new Paint();
+		temppaint.setStyle(Style.STROKE);
+		temppaint.setStrokeWidth(2);
+		temppaint.setColor(Color.BLACK);
+		int circle = width < height ? width : height;
+		circle = circle / 2;
+		composedCanvas.drawCircle(width/2, height/2, circle - 3, temppaint);
 		canvas.drawBitmap(composedBitmap, 0, 0, new Paint());
 	}
 
